@@ -1,0 +1,70 @@
+{
+  "companyName": "Rudra Enterprises",
+  "meta": {
+    "title": "Rudra Enterprises - Custom Furniture & Fabrication in Ponda, Goa",
+    "description": "Expert carpentry, aluminium work, MS fabrication, modular kitchens, and more in Ponda, Goa. Contact Rudra Enterprises for a free quote.",
+    "keywords": "carpenter in Goa, modular kitchen Ponda, furniture Goa, aluminium fabrication Goa, SS railing Ponda, Rudra Enterprises"
+  },
+  "hero": {
+    "title": "Crafting Your Vision into Reality",
+    "subtitle": "Your trusted partner in Goa for custom furniture, modular kitchens, and precision fabrication.",
+    "cta": "Get a Free Quote"
+  },
+  "contact": {
+    "primaryName": "Harinath Vishwakarma",
+    "phones": ["+919026886697", "+919792048623"],
+    "secondaryName": "Pramod Vishwakarma",
+    "secondaryPhones": ["+918408828835", "+918600169830"],
+    "whatsapp": "+919026886697",
+    "email": "harinath8646@gmail.com",
+    "address": "Mamlekar Bldg., Shop No.2, Nagzari, Curti, Ponda - Goa 403 401",
+    "social": {
+      "instagram": "https://www.instagram.com/rudra_enterprises_2014/",
+      "facebook": "https://www.facebook.com/YOUR_FACEBOOK_PAGE_URL",
+      "justdial": "https://www.justdial.com/Goa/Rudra-Enterprises-Near-Sankhlyo-Devasthan-Ponda/0832PX832-X832-230101200723-L3H3_BZDET"
+    }
+  },
+  "services": [
+    {
+      "name": "Custom Furniture",
+      "description": "Beds, wardrobes, tables, and more, built to your exact specifications."
+    },
+    {
+      "name": "Aluminium Work",
+      "description": "Durable and modern aluminium windows, doors, and partitions."
+    },
+    {
+      "name": "M.S. Fabrication",
+      "description": "Custom metal gates, grills, and structural fabrication work."
+    },
+    {
+      "name": "Ducting",
+      "description": "Professional ducting solutions for commercial and residential needs."
+    },
+    {
+      "name": "False Ceiling & POP",
+      "description": "Beautiful and modern false ceiling designs, including POP work."
+    },
+    {
+      "name": "Painting",
+      "description": "Professional interior and exterior painting services."
+    },
+    {
+      "name": "S.S. Railing",
+      "description": "Sleek and strong stainless steel railings for stairs and balconies."
+    },
+    {
+      "name": "Modular Kitchen & Trolleys",
+      "description": "Design and installation of modern modular kitchens and trolleys."
+    }
+  ],
+  "portfolio": [
+    { "id": 1, "imageUrl": "/images/kitchen-1.jpg", "caption": "Modern Modular Kitchen" },
+    { "id": 2, "imageUrl": "/images/wardrobe-1.jpg", "caption": "Custom Wardrobe" },
+    { "id": 3, "imageUrl": "/images/railing-1.jpg", "caption": "S.S. Railing" },
+    { "id": 4, "imageUrl": "/images/fabrication-1.jpg", "caption": "M.S. Fabrication Gate" },
+    { "id": 5, "imageUrl": "/images/ceiling-1.jpg", "caption": "Designer False Ceiling" },
+    { "id": 6, "imageUrl": "/images/aluminium-1.jpg", "caption": "Aluminium Window" }
+  ]
+}
+
