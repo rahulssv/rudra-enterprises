@@ -4,6 +4,27 @@ import { useState } from 'react';
 export default function PortfolioGallery({ portfolio }) {
   const [selectedImage, setSelectedImage] = useState(null);
 
+  // Get basePath from __NEXT_DATA__ synchronously (available in browser)
+  const getBasePath = () => {
+    if (typeof window !== 'undefined' && window.__NEXT_DATA__) {
+      return window.__NEXT_DATA__.assetPrefix || '';
+    }
+    return '';
+  };
+
+  const getImageUrl = (url) => {
+    const basePath = getBasePath();
+    // If URL already starts with basePath, return as is
+    if (basePath && url.startsWith(basePath)) {
+      return url;
+    }
+    // If URL starts with /, prepend basePath
+    if (url.startsWith('/')) {
+      return basePath + url;
+    }
+    return url;
+  };
+
   const openLightbox = (item) => {
     setSelectedImage(item);
     document.body.style.overflow = 'hidden';
@@ -44,7 +65,7 @@ export default function PortfolioGallery({ portfolio }) {
               >
                 <div className="relative h-64 overflow-hidden">
                   <img
-                    src={item.imageUrl}
+                    src={getImageUrl(item.imageUrl)}
                     alt={item.caption}
                     className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-700"
                     onError={(e) => {
@@ -111,7 +132,7 @@ export default function PortfolioGallery({ portfolio }) {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={selectedImage.imageUrl}
+              src={getImageUrl(selectedImage.imageUrl)}
               alt={selectedImage.caption}
               className="max-w-full max-h-[90vh] object-contain rounded-lg"
               onError={(e) => {
