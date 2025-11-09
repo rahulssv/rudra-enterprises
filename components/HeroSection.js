@@ -2,7 +2,13 @@ export default function HeroSection({ heroData }) {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = 80; // Account for fixed navbar height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -48,7 +54,15 @@ export default function HeroSection({ heroData }) {
           <button
             onClick={() => {
               const element = document.getElementById('portfolio');
-              if (element) element.scrollIntoView({ behavior: 'smooth' });
+              if (element) {
+                const offset = 80;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
             }}
             className="px-8 py-4 bg-transparent text-white font-semibold text-lg rounded-xl border-2 border-white/50 hover:border-white hover:bg-white/10 transition-all duration-300 backdrop-blur-sm"
           >

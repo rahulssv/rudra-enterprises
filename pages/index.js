@@ -5,6 +5,7 @@ import AboutUs from '../components/AboutUs';
 import Services from '../components/Services';
 import PortfolioGallery from '../components/PortfolioGallery';
 import Contact from '../components/Contact';
+import GoogleMaps from '../components/GoogleMaps';
 import Footer from '../components/Footer';
 
 export default function Home({ data }) {
@@ -35,6 +36,9 @@ export default function Home({ data }) {
       <Services services={data.services} />
       <PortfolioGallery portfolio={data.portfolio} />
       <Contact contactData={data.contact} />
+      {data.googleMaps && (
+        <GoogleMaps googleMapsData={data.googleMaps} address={data.contact.address} />
+      )}
       <Footer companyName={data.companyName} contactData={data.contact} />
     </>
   );

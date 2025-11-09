@@ -119,7 +119,7 @@ export default function Contact({ contactData }) {
                   </a>
                 )}
 
-                {contactData.social.facebook && contactData.social.facebook !== 'https://www.facebook.com/YOUR_FACEBOOK_PAGE_URL' && (
+                {contactData.social.facebook && (
                   <a
                     href={contactData.social.facebook}
                     target="_blank"

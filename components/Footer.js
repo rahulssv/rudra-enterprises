@@ -29,7 +29,15 @@ export default function Footer({ companyName, contactData }) {
                 <button
                   onClick={() => {
                     const element = document.getElementById('about');
-                    if (element) element.scrollIntoView({ behavior: 'smooth' });
+                    if (element) {
+                      const offset = 80;
+                      const elementPosition = element.getBoundingClientRect().top;
+                      const offsetPosition = elementPosition + window.pageYOffset - offset;
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
                   }}
                   className="hover:text-primary-400 transition-colors"
                 >
@@ -40,7 +48,15 @@ export default function Footer({ companyName, contactData }) {
                 <button
                   onClick={() => {
                     const element = document.getElementById('services');
-                    if (element) element.scrollIntoView({ behavior: 'smooth' });
+                    if (element) {
+                      const offset = 80;
+                      const elementPosition = element.getBoundingClientRect().top;
+                      const offsetPosition = elementPosition + window.pageYOffset - offset;
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
                   }}
                   className="hover:text-primary-400 transition-colors"
                 >
@@ -51,7 +67,15 @@ export default function Footer({ companyName, contactData }) {
                 <button
                   onClick={() => {
                     const element = document.getElementById('portfolio');
-                    if (element) element.scrollIntoView({ behavior: 'smooth' });
+                    if (element) {
+                      const offset = 80;
+                      const elementPosition = element.getBoundingClientRect().top;
+                      const offsetPosition = elementPosition + window.pageYOffset - offset;
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
                   }}
                   className="hover:text-primary-400 transition-colors"
                 >
@@ -62,7 +86,15 @@ export default function Footer({ companyName, contactData }) {
                 <button
                   onClick={() => {
                     const element = document.getElementById('contact');
-                    if (element) element.scrollIntoView({ behavior: 'smooth' });
+                    if (element) {
+                      const offset = 80;
+                      const elementPosition = element.getBoundingClientRect().top;
+                      const offsetPosition = elementPosition + window.pageYOffset - offset;
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
                   }}
                   className="hover:text-primary-400 transition-colors"
                 >
